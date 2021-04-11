@@ -1,0 +1,49 @@
+.counter-wrapper {
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 3px solid green;
+  border-radius: 10px;
+  background-color: yellowgreen;
+}
+
+.count-screen {
+  border: 2px solid green;
+  border-radius: 5px;
+  width: 100px;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; 
+}
+
+.Even {
+  border: 2px solid green;
+  border-radius: 5px;
+  width: 100px;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: violet;
+}
+
+.Odd {
+  border: 2px solid green;
+  border-radius: 5px;
+  width: 100px;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: forestgreen;
+}
