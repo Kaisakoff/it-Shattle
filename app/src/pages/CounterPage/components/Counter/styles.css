@@ -28,7 +28,7 @@
   margin-top: 50px; 
 }
 
-.even-Even {
+.Even {
   border: 2px solid green;
   border-radius: 5px;
   width: 100px;
@@ -38,7 +38,7 @@
   background-color: violet;
 }
 
-.even-Odd {
+.Odd {
   border: 2px solid green;
   border-radius: 5px;
   width: 100px;

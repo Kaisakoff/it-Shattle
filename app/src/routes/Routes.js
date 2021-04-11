@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import { ROUTES } from './routesNames';
-import HomePageContainer from '../HomePage/containers/HomePageContainer';
-import CounterPageContainer from '../CounterPage/containers/CounterPageContainer';
+import HomePageContainer from '../pages/HomePage/containers/HomePageContainer';
+import CounterPageContainer from '../pages/CounterPage/containers/CounterPageContainer';
 
 const Routes = () => {
   return (

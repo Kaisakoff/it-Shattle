@@ -11,13 +11,10 @@ class CounterPageContainer extends Component {
     };
   };
 
-
-
   checkNumberType = () => {
     if (this.state.countValue % 2 === 0) {
       this.setState({
-        typeNumber: 'Even',
-
+        typeNumber: 'Even'
       });
     } else {
       this.setState({
@@ -27,21 +24,22 @@ class CounterPageContainer extends Component {
   };
 
   handleIncrement = () => {
-    this.setState({ countValue: this.state.countValue += 1 },
-      () => { this.checkNumberType() }
-    );
+    this.setState({ countValue: this.state.countValue + 1 },
+      () => this.checkNumberType());
   };
 
   handleDecrement = () => {
     if (this.state.countValue > 0) {
-      this.setState({ countValue: this.state.countValue -= 1 },
-        () => { this.checkNumberType() });
+      this.setState({ countValue: this.state.countValue - 1 },
+        () => this.checkNumberType());
     }
   };
 
   handleReset = () => {
-    this.setState({ countValue: this.state.countValue = 0 },
-      () => { this.checkNumberType() });
+    this.setState((state) => {
+      return { countValue: 0 }
+    },
+      () => this.checkNumberType());
   };
 
   render() {

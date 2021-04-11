@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import { ROUTES } from '../../../routes/routesNames';
-import CounterPageContainer from '../../containers/CounterPageContainer';
+import { ROUTES } from '../../../../routes/routesNames';
 
 import './styles.css';
 
@@ -12,7 +11,7 @@ const Counter = ({ countValue, typeNumber, handleIncrement, handleDecrement, han
     <div>
       <div className='counter-wrapper'>
         <div className="count-screen">{countValue}</div>
-        <div className={"even-" + typeNumber}>{typeNumber}</div>
+        <div className={typeNumber}>{typeNumber}</div>
         <div className="buttons-wrapper">
           <button onClick={handleDecrement}>-</button>
           <button onClick={handleReset}>Reset</button>
